@@ -6,12 +6,15 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+Ruby 3.0
 
 * System dependencies
 
 * Configuration
 
 * Database creation
+
+* Postgres
 
 * Database initialization
 
