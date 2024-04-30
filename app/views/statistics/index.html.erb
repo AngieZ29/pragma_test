@@ -1,0 +1,28 @@
+<!-- app/views/productos/index.html.erb -->
+
+<h1>Estadística Carga Archivos</h1>
+
+<table class="table table-bordered"45>
+  <thead>
+    <tr>
+      <th>Total Registros</th>
+      <th>Promedio Precio</th>
+      <th>Valor Mínimo Precio</th>
+      <th>Valor Máximo Precio</th>
+      <th>Valores Nulos en Precio</th>
+      <!-- Agrega más columnas según sea necesario -->
+    </tr>
+  </thead>
+  <tbody>
+    <% @file_statistics.each do |row| %>
+      <tr>
+        <td><%= row.total_rows %></td>
+        <td><%= row.avg_price %></td>
+        <td><%= row.min_price %></td>
+        <td><%= row.max_price %></td>
+        <td><%= row.nil_price %></td>
+        <!-- Agrega más celdas según sea necesario -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
